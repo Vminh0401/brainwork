@@ -5,8 +5,13 @@ from django.contrib import admin
 from .models import Course
 
 
-@admin.register(Course)
+# @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ['id_course', 'name_course', 'description', 'status', 'pl_course', 'objects_course', 'target', 'gv', 'content']
+    list_display = ['id_course', 'name_course', 'img_course', 'description', 'status', 'pl_course', 'objects_course',
+                    'target', 'gv', 'content']
 
-    search_fields = ['id_course', 'name_course', 'description', 'status', 'pl_course', 'objects_course', 'target', 'gv', 'content']
+    search_fields = ['id_course', 'name_course', 'img_course', 'description', 'status', 'pl_course', 'objects_course',
+                     'target', 'gv', 'content']
+
+
+admin.site.register(Course)

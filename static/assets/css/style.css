@@ -1696,7 +1696,7 @@ hr {
     -o-transition: all .4s ease-out 0s;
     transition: all .4s ease-out 0s;
     background: #fff;
-    padding: 30px 20px 25px 20px;
+    padding: 30px 30px 25px 20px;
     position: relative;
     z-index: 1;
     border-radius: 5px
@@ -1732,7 +1732,52 @@ hr {
     display: block;
     text-decoration: underline transparent
 }
+''...................................................
+.categories-area .course {
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    background: #fff;
+    padding: 30px 20px 25px 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px
+}
 
+.categories-area .course::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #fdfdfd;
+    transition: .6s;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px
+}
+
+.categories-area .course .cat-icon {
+    margin-bottom: 25px
+}
+
+.categories-area .course .cat-cap h5 {
+    color: #000;
+    -webkit-transition: all .2s ease-out 0s;
+    -moz-transition: all .2s ease-out 0s;
+    -ms-transition: all .2s ease-out 0s;
+    -o-transition: all .2s ease-out 0s;
+    transition: all .2s ease-out 0s;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: underline transparent
+}
+
+''......................................................................
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .categories-area .single-cat .cat-cap h5 {
         font-size: 21px

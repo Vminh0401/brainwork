@@ -15,3 +15,6 @@ class Course(models.Model):
     gv = models.CharField(max_length=50)
     content = models.TextField(max_length=5000)
 
+    def __str__(self):
+        return self.name_course
+
