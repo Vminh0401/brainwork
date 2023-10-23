@@ -16,45 +16,47 @@
 </div>
 </div>
 
-
+{% for id in course_1 %}
 <section class="categories-area section-bg">
 <div class="container">
  <div class="row">
      <div class="col-lg-3 col-md-4 col-sm-6">
          <div class="single-cat text-center mb-30">
              <div class="cat-icon">
-                 {% for item in course %}
-                 <img src="{% static 'assets/img/congnghe5G_banner.jpg' %}" style = "height: 100%; width: 100%;" alt>
+                 <img style="width: 100%;" src="{% static 'course/2023/10/20/congnghe5G_banner.jpg' %}" alt>
              </div>
              <div class="cat-cap">
-                 <h5>{{item.name_course}}</h5>
-                     <a href="{% url 'Course:course_detail' item.id_course %}" class="browse-btn2">Learn More <img src="{% static 'assets/img/icon/right-arrow2.svg' %}" alt></a>
-                 {% endfor %}
+                 <h5>{{id.name_course}}</h5>
+                 <a href="{% url 'Course:course_detail' id.id_course %}" class="browse-btn2">Learn More <img src="{% static 'assets/img/icon/right-arrow2.svg' %}" alt></a>
              </div>
          </div>
      </div>
+     {% for id in course_2 %}
      <div class="col-lg-3 col-md-4 col-sm-6">
          <div class="single-cat text-center mb-30">
              <div class="cat-icon">
-                 <img src="{% static 'assets/img/img_course/marketingsale-thumb.jpg' %}" alt>
+                 <img  style="width: 75%;" src="{% static 'course/2023/10/20/dientoandm.jpeg' %}" alt>
              </div>
              <div class="cat-cap">
-                 <h5>Điện toán đám mây</h5>
-                 <a href="#" class="browse-btn2">Learn More <img src="{% static 'assets/img/icon/right-arrow2.svg' %}" alt></a>
+                 <h5>{{id.name_course}}</h5>
+                 <a href="{% url 'Course:course_detail' id.id_course %}" class="browse-btn2">Learn More <img src="{% static 'assets/img/icon/right-arrow2.svg' %}" alt></a>
              </div>
          </div>
      </div>
+     {% endfor %}
+     {% for id in course_3 %}
      <div class="col-lg-3 col-md-4 col-sm-6">
          <div class="single-cat text-center mb-30">
              <div class="cat-icon">
-                 <img src="{% static 'assets/img/img_course/phapluathopdong-thumb.jpg' %}" alt>
+                 <img style="width: 87%;" src="{% static 'course/2023/10/21/chuyendoiso-banner.jpg' %}" alt>
              </div>
              <div class="cat-cap">
                  <h5>Chuyển đổi số trong vận hành các nhà máy điện</h5>
-                 <a href="#" class="browse-btn2">Learn More <img src="{% static 'assets/img/icon/right-arrow2.svg' %}" alt></a>
+                 <a href="{% url 'Course:course_detail' id.id_course %}" class="browse-btn2">Learn More <img src="{% static 'assets/img/icon/right-arrow2.svg' %}" alt></a>
              </div>
          </div>
      </div>
+     {% endfor %}
      <div class="col-lg-3 col-md-4 col-sm-6">
          <div class="single-cat text-center mb-30">
              <div class="cat-icon">
@@ -168,6 +170,8 @@
  </div>
 </div>
 </section>
+{% endfor %}
+
 
 
 <section class="wantToWork-area w-padding2">

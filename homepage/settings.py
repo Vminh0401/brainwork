@@ -134,6 +134,6 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DatabaseWrapper.data_types['DateTimeField'] = 'datetime'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/assets/img')
-
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'static/assets/img')
+MEDIA_ROOT = '%s/course/static' % BASE_DIR
 

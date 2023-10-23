@@ -1,16 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-Hello
-<h1>Title</h1>
-{{ cD.name_course }}
-<h1>Content</h1>
-{{cD.content}}
-<h1>Ảnh</h1>
-{{ cD.img_course }}
-</body>
-</html>
+{% include 'assets/header.html' %}
+{% load static %}
+<main>
+<div class="slider-area">
+<div class="single-slider slider-bg3 hero-overly slider-height2 d-flex align-items-center">
+<div class="container">
+<div class="row justify-content-center ">
+<div class="col-xl-12">
+<div class="hero-caption hero-caption2 text-center">
+<h2>Khóa học chuyển đổi số, công nghệ</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <section class="blog_area section-padding">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 mb-5 mb-lg-0">
+<div class="blog_left_sidebar">
+<article class="blog_item">
+<div class="blog_item_img">
+<img class="card-img rounded-0" src="{% static 'course/2023/10/20/congnghe5G_banner.jpg' %}" alt>
+<a href="#" class="blog_item_date">
+<h3>15</h3>
+<p>Jan</p>
+</a>
+</div>
+<div class="blog_details">
+<ul class="blog-info-link">
+<li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+<li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+</ul>
+</div>
+</article>
+<!-- ff-->
+<article class="course_content">
+<h2 class="text_name">{{ cD.name_course }}</h2>
+<p class="text_course">{{cD.description}}</p>
+<h3 class="part_course">Đối tượng tham dự</h3>
+<p class="text_course">{{cD.objects_course}}</p>
+<h3 class="part_course">Mục Tiêu</h3>
+<p class="text_course">{{cD.target}}</p>
+<h3 class="part_course">Thông tin giảng viên</h3>
+<p class="text_course">{{cD.gv}}</p>
+<h3 class="part_course">Nội dung</h3>
+<p class="text_course">{{cD.content}}</p>
+
+
+
+</article>
+<!-- ff-->
+</div>
+</div>
+<div class="col-lg-4">
+<div class="blog_right_sidebar">
+<aside class="single_sidebar_widget search_widget">
+<h2 class="select_course">Hình thức học</h2>
+<hr class="line_course">
+<div class="tag-course">
+<a href="#">Học trực tuyến</a>
+<a href="#">Học tập trung</a>
+<a href="#">E-Learning</a>
+</div>
+</aside>
+<!--    ...-->
+<aside class="single_sidebar_widget search_widget">
+<h2 class="select_course">Tải thông tin khóa học bản PDF</h2>
+<hr class="line_course">
+<label class="dowload_course" role="button">Tải xuống <i aria-hidden="true" class="fa-solid fa-download fa-beat"></i> </label>
+</aside>
+<aside class="single_sidebar_widget post_category_widget">
+<h4 class="select_course">Khoá học liên quan</h4>
+<ul class="list cat-list">
+<li>
+<a href="#" class="d-flex">
+<p class="text_course">Công nghệ 5G và các ứng dụng</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(803)</p>
+</a>
+</li>
+<li>
+<a href="#" class="d-flex">
+<p class="text_course">Điện toán đám mây</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(705)</p>
+</a>
+</li>
+<li>
+<a href="#" class="d-flex">
+<p class="text_course">Chuyển đổi số trong vận hành các nhà máy điện</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(604)</p>
+</a>
+</li>
+<li>
+<a href="#" class="d-flex">
+<p class="text_course">Trí tuệ nhân tạo (AI) và học máy (Machine learning)</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(836)</p>
+</a>
+</li>
+<li>
+<a href="#" class="d-flex">
+<p class="text_course">Ứng dụng IOT và AI trong đô thị thông minh</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(660)</p>
+</a>
+</li>
+<li>
+<a href="#" class="d-flex">
+<p class="text_course">Công nghệ Blockchain</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(782)</p>
+</a>
+</li>
+ <li>
+<a href="#" class="d-flex">
+<p class="text_course">Các giải pháp công nghệ mới cho nền kinh tế</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(430)</p>
+</a>
+</li>
+ <li>
+<a href="#" class="d-flex">
+<p class="text_course">Phân tích dữ liệu lớn</p>
+<p class="text_course"><i class="fa-solid fa-eye"></i>(434)</p>
+</a>
+</li>
+</ul>
+</aside>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+{% include 'assets/footer.html' %}
