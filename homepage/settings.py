@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'documentdl',
     'infofeedback',
     'core',
+    'customadmin',
 ]
 
 MIDDLEWARE = [
