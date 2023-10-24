@@ -4931,7 +4931,7 @@ del {
 
 
 
-
+/* Error Roll Text */
 .scrolling-words-container {
   display: flex;
   align-items: center;
@@ -4944,11 +4944,11 @@ del {
   margin: auto;
   overflow: hidden;
 
-roll_text.ul {
+roll_text1 ul {
     margin: 0 0.625rem;
     padding: 0;
     animation: scrollUp 4s infinite;
-    roll_text.li {
+    liroll_text li {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -4967,3 +4967,4 @@ $item-count: 5;
     }
   }
 }
+/* Error Roll Text */

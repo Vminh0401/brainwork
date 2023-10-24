@@ -21,7 +21,7 @@
 <div class="blog_left_sidebar">
 <article class="blog_item">
 <div class="blog_item_img">
-<img class="card-img rounded-0" src="{% static 'course/2023/10/20/congnghe5G_banner.jpg' %}" alt>
+<img class="card-img rounded-0" src="{{ cD.img_course.url }}" alt>
 <a href="#" class="blog_item_date">
 <h3>15</h3>
 <p>Jan</p>
@@ -46,9 +46,6 @@
 <p class="text_course">{{cD.gv}}</p>
 <h3 class="part_course">Nội dung</h3>
 <p class="text_course">{{cD.content}}</p>
-
-
-
 </article>
 <!-- ff-->
 </div>
@@ -70,53 +67,59 @@
 <hr class="line_course">
 <label class="dowload_course" role="button">Tải xuống <i aria-hidden="true" class="fa-solid fa-download fa-beat"></i> </label>
 </aside>
+<!-- ...-->
+ <aside class="single_sidebar_widget search_widget">
+<h2 class="select_course">Yêu cầu báo giá</h2>
+<hr class="line_course">
+</aside>
+<!-- ...-->
 <aside class="single_sidebar_widget post_category_widget">
 <h4 class="select_course">Khoá học liên quan</h4>
 <ul class="list cat-list">
 <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/1" class="d-flex">
 <p class="text_course">Công nghệ 5G và các ứng dụng</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(803)</p>
 </a>
 </li>
 <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/2" class="d-flex">
 <p class="text_course">Điện toán đám mây</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(705)</p>
 </a>
 </li>
 <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/3" class="d-flex">
 <p class="text_course">Chuyển đổi số trong vận hành các nhà máy điện</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(604)</p>
 </a>
 </li>
 <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/4" class="d-flex">
 <p class="text_course">Trí tuệ nhân tạo (AI) và học máy (Machine learning)</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(836)</p>
 </a>
 </li>
 <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/5" class="d-flex">
 <p class="text_course">Ứng dụng IOT và AI trong đô thị thông minh</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(660)</p>
 </a>
 </li>
 <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/6" class="d-flex">
 <p class="text_course">Công nghệ Blockchain</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(782)</p>
 </a>
 </li>
  <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/7" class="d-flex">
 <p class="text_course">Các giải pháp công nghệ mới cho nền kinh tế</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(430)</p>
 </a>
 </li>
  <li>
-<a href="#" class="d-flex">
+<a href="/index/services/Data_science/8" class="d-flex">
 <p class="text_course">Phân tích dữ liệu lớn</p>
 <p class="text_course"><i class="fa-solid fa-eye"></i>(434)</p>
 </a>
