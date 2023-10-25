@@ -7,3 +7,7 @@ from django.contrib.auth import authenticate, login
 
 def admin_login(request):
     return render(request, '../templates/admin_login/Admin_login.html')
+
+
+def admin_page(request):
+    return render(request, '../templates/admin_page/Admin_page.html')

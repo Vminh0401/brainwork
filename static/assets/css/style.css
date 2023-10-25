@@ -4928,6 +4928,10 @@ del {
     margin-bottom: 10px
 }
 
+.font_title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 
 
@@ -4967,4 +4971,6 @@ $item-count: 5;
     }
   }
 }
+
+
 /* Error Roll Text */
