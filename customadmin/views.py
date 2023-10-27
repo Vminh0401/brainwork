@@ -2,9 +2,15 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
+@login_required(login_url='admin_login')
+def admin_page(request):
+    return render(request, '../templates/admin_page/Admin_page.html')
+
+
 def sign_up(request):
     if request.method == "POST":
         username = request.POST.get('username')
@@ -39,9 +45,6 @@ def admin_login(request):
         return render(request, '../templates/admin_login/Admin_login.html')
 
 
-def admin_page(request):
-    return render(request, '../templates/admin_page/Admin_page.html')
-
-
 def sign_out(request):
-    pass
+    logout(request)
+    return render(request, '../templates/admin_login/Admin_login.html')
