@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
-@login_required(login_url='')
+# @login_required(login_url='')
 def admin_page(request):
     return render(request, '../templates/admin_page/Admin_page.html')
 
@@ -33,7 +33,6 @@ def admin_login(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
-
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
