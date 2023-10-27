@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
-@login_required(login_url='admin_login')
+@login_required(login_url='')
 def admin_page(request):
     return render(request, '../templates/admin_page/Admin_page.html')
 

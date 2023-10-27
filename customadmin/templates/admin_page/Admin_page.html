@@ -456,7 +456,7 @@
 <a href="#">Settings</a>
 {% if user.is_authenticated %}
     {% csrf_token %}
-<a href="{% url 'custom_admin:sign_out' %}">Log Out </a>
+<a href="{% url 'custom_admin:sign_out_admin' %}">Log Out </a>
 {% endif %}
 </div>
 </div>

@@ -138,3 +138,5 @@ DatabaseWrapper.data_types['DateTimeField'] = 'datetime'
 MEDIA_URL = 'course/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'course/static')
 
+LOGIN_URL = '/admin-login'
+
